@@ -1,13 +1,38 @@
-console.log('Hello world');
+const express = require('express');
 
-const express = require('express')
-const app = express()
-const port = 3000
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+/*****************************************************
+ * Define some constants and variables
+ ****************************************************/
+const app = express();
+const port = 3000;
+
+/*****************************************************
+ * Middleware
+ ****************************************************/
+app.use(express.static('public'));
+
+/*****************************************************
+ * Set template engine
+ ****************************************************/
+
+/*****************************************************
+ * Routes
+ * 
+ * GET /                        
+ *   home - show movielist
+  ****************************************************/
+
+/*****************************************************
+ * If no routes give response, show 404 Page
+ ****************************************************/
+ app.get('/', (req, res) => {
+    res.send("Hello World!")
 })
 
+/*****************************************************
+ * Start webserver
+ ****************************************************/
 app.listen(port, () => {
-    console.log(`Example app listening on  http://localhost:${port}`)
+    console.log(`Webserver running on port localhost:${port}`);
 })
