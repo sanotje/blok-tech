@@ -21,7 +21,7 @@
     "depd": "^2.0.0",
     "destroy": "^1.2.0",
     "ee-first": "^1.1.1",
-    "ejs": "^3.1.7",
+    "ejs": "^3.1.8",
     "encodeurl": "^1.0.2",
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
@@ -71,20 +71,21 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "dev":"nodemon server.js",
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "app": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanotje/be.git"
+    "url": "git+https://github.com/sanotje/blok-tech.git"
   },
   "author": "Sanae Akhiat",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sanotje/be/issues"
+    "url": "https://github.com/sanotje/blok-tech/issues"
   },
-  "homepage": "https://github.com/sanotje/be#readme",
+  "homepage": "https://github.com/sanotje/blok-tech#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
   }
