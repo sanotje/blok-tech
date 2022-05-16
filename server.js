@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+/*const port = 3000;*/
 
 /*****************************************************
  * Middleware
@@ -73,6 +73,6 @@ app.get("/myfavorites", (req, res) => {
 /*****************************************************
  * Start webserver
  ****************************************************/
-app.listen(port, () => {
-  console.log(`Webserver running on port localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`App listening on port ${process.env.PORT}`);
 });
