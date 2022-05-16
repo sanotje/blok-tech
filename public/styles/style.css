@@ -9,10 +9,9 @@
 main{
     width: 100%;
     overflow: hidden;
-    background-color: mediumpurple;
+    background-color: white;
     position: relative;
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 1.25rem;
     margin-top: 4rem;
@@ -69,24 +68,14 @@ nav li a:hover{
 
 
 .box{
-      position: relative;
-      width: 95%;
-      max-width: 95%;
-      height: 50em;
+      width: 55%;
+      height: 20em;
       background-color: white;
+      box-shadow: 0 1em 1.5em rgb(49, 39, 54);
       border-radius: 3rem;
-      box-shadow: 0 1em 7em rgb(70, 49, 80);
-      /* margin-bottom: 4em; */
-  }
-
-  .inner-box{
-      /* position: absolute; */
-      width: 75%;
-      height: 25em;
-      background-color: white;
-      box-shadow: 0 1em 7em rgb(70, 49, 80);
-      border-radius: 3rem;
-      /* margin-top: 3em; */
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-left: 3em;
   }
 
   .profielfoto{

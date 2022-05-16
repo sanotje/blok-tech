@@ -1,9 +1,12 @@
 <% profiles.forEach(function(profile){ %>
-    <div class="inner-box">
-        <h2>Name</h2>
+    <div class="box">
+        <%= profile.foto %> 
+        <h3>Name</h3>
         <h2><%= profile.name %></h2>
+        <h3>Quote</h3>
+        <h2><%= profile.quote %></h2>        
         <h3>Age</h3>
-        <h3><%= profile.age %></h3>
+        <h2><%= profile.age %></h2>
         <h3><%= profile.plaats %></h3>
     </div>
 <% }); %>
